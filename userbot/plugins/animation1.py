@@ -74,6 +74,79 @@ async def _(event):
 
 
 @catub.cat_cmd(
+    pattern="queen$",
+    command=("queen", plugin_category),
+    info={
+        "header": "queen animation",
+        "usage": "{tr}queen",
+    },
+)
+async def _(event):
+    "animation command"
+    event = await edit_or_reply(event, "queen")
+    await event.edit("-_-")
+    await asyncio.sleep(0.5)
+    await event.edit("_-_")
+    await asyncio.sleep(0.5)
+    await event.edit("-_-")
+    await asyncio.sleep(0.5)
+    await event.edit("_-_")
+    await asyncio.sleep(0.5)
+    await event.edit("-_-")
+    await asyncio.sleep(0.5)
+    await event.edit("_-_")
+    await asyncio.sleep(0.5)
+    await event.edit("-_-")
+    await asyncio.sleep(0.5)
+    await event.edit("_-_")
+    await asyncio.sleep(0.5)
+    await event.edit("-_-")
+    await asyncio.sleep(0.5)
+    await event.edit("_-_")
+    await asyncio.sleep(0.5)
+    await event.edit("-_-")
+    await asyncio.sleep(0.5)
+    await event.edit("_-_")
+    await asyncio.sleep(0.5)
+    await event.edit("-_-")
+    await asyncio.sleep(0.5)
+    await event.edit("_-_")
+    await asyncio.sleep(0.5)
+    await event.edit("-_-")
+    await asyncio.sleep(0.5)
+    await event.edit("_-_")
+    await asyncio.sleep(0.5)
+    await event.edit("-_-")
+    await asyncio.sleep(0.5)
+    await event.edit("_-_")
+    await asyncio.sleep(0.5)
+    await event.edit("-_-")
+    await asyncio.sleep(0.5)
+    await event.edit("_-_")
+    await asyncio.sleep(0.5)
+    await event.edit("-_-")
+    await asyncio.sleep(0.5)
+    await event.edit("_-_")
+    await asyncio.sleep(0.5)
+    await event.edit("-_-")
+    await asyncio.sleep(0.5)
+    await event.edit("_-_")
+    await asyncio.sleep(0.5)
+    await event.edit("-_-")
+    await asyncio.sleep(0.5)
+    await event.edit("_-_")
+    await asyncio.sleep(0.5)
+    await event.edit("-_-")
+    await asyncio.sleep(0.5)
+    await event.edit("_-_")
+    await asyncio.sleep(0.5)
+    await event.edit("-_-")
+    await asyncio.sleep(0.5)
+    await event.edit("_-_")
+    await asyncio.sleep(0.5)
+    
+
+@catub.cat_cmd(
     pattern="call$",
     command=("call", plugin_category),
     info={
