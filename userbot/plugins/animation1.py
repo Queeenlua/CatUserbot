@@ -277,6 +277,98 @@ async def _(event):
     await asyncio.sleep(0.3)
     await event.edit("EVERyBOdy iZ GangSTur UNtIL I ArRivE 🔥🔥🔥")
 
+@catub.cat_cmd(
+    pattern="Queen$",
+    command=("Queen", plugin_category),
+    info={
+        "header": "Queen animation",
+        "usage": "{tr}Queen",
+    },
+)
+async def _(event):
+    "animation command"
+    event = await edit_or_reply(event, "Queen")
+    @catub.cat_cmd(
+    pattern="bombs$",
+    command=("bombs", plugin_category),
+    info={
+        "header": "bomb animation",
+        "usage": "{tr}bombs",
+    },
+)
+async def _(event):
+    "animation command"
+    event = await edit_or_reply(event, "bombs")
+    await event.edit("-_-")
+    await asyncio.sleep(0.5)
+    await event.edit("_-_")
+    await asyncio.sleep(0.5)
+    await event.edit("-_-")
+    await asyncio.sleep(0.5)
+    await event.edit("_-_")
+    await asyncio.sleep(0.5)
+    await event.edit("-_-")
+    await asyncio.sleep(0.5)
+    await event.edit("_-_")
+    await asyncio.sleep(0.5)
+    await event.edit("-_-")
+    await asyncio.sleep(0.5)
+    await event.edit("_-_")
+    await asyncio.sleep(0.5)
+    await event.edit("-_-")
+    await asyncio.sleep(0.5)
+    await event.edit("_-_")
+    await asyncio.sleep(0.5)
+    await event.edit("-_-")
+    await asyncio.sleep(0.5)
+    await event.edit("_-_")
+    await asyncio.sleep(0.5)
+    await event.edit("-_-")
+    await asyncio.sleep(0.5)
+    await event.edit("_-_")
+    await asyncio.sleep(0.5)
+    await event.edit("-_-")
+    await asyncio.sleep(0.5)
+    await event.edit("_-_")
+    await asyncio.sleep(0.5)
+    await event.edit("-_-")
+    await asyncio.sleep(0.5)
+    await event.edit("_-_")
+    await asyncio.sleep(0.5)
+    await event.edit("-_-")
+    await asyncio.sleep(0.5)
+    await event.edit("_-_")
+    await asyncio.sleep(0.5)
+    await event.edit("-_-")
+    await asyncio.sleep(0.5)
+    await event.edit("_-_")
+    await asyncio.sleep(0.5)
+    await event.edit("-_-")
+    await asyncio.sleep(0.5)
+    await event.edit("_-_")
+    await asyncio.sleep(0.5)
+    await event.edit("-_-")
+    await asyncio.sleep(0.5)
+    await event.edit("_-_")
+    await asyncio.sleep(0.5)
+    await event.edit("-_-")
+    await asyncio.sleep(0.5)
+    await event.edit("_-_")
+    await asyncio.sleep(0.5)
+    await event.edit("-_-")
+    await asyncio.sleep(0.5)
+    await event.edit("_-_")
+    await asyncio.sleep(0.5)
+    await event.edit("-_-")
+    await asyncio.sleep(0.5)
+    await event.edit("_-_")
+    await asyncio.sleep(0.5)
+
+
+
+
+
+
 
 @catub.cat_cmd(
     pattern="charging$",
