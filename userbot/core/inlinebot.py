@@ -53,52 +53,52 @@ def ibuild_keyboard(buttons):
 
 
 def main_menu():
-    text = f"𝗖𝗮𝘁𝗨𝘀𝗲𝗿𝗯𝗼𝘁 𝗛𝗲𝗹𝗽𝗲𝗿\
-        \n𝗣𝗿𝗼𝘃𝗶𝗱𝗲𝗱 𝗯𝘆 {mention}"
+    text = f"**Base65 Userbot**\
+        \nProvided by {mention}"
     buttons = [
         (
             Button.inline(
-                f"ℹ️ Info",
+                f"ℹ️ Information",
                 data="check",
             ),
         ),
         (
             Button.inline(
-                f"👮‍♂️ Admin ({len(GRP_INFO['admin'])})",
+                f"➣‍ Admin ({len(GRP_INFO['admin'])})",
                 data=f"admin_menu",
             ),
             Button.inline(
-                f"🤖 Bot ({len(GRP_INFO['bot'])})",
+                f"➣ Bot ({len(GRP_INFO['bot'])})",
                 data=f"bot_menu",
             ),
         ),
         (
             Button.inline(
-                f"🎨 Fun ({len(GRP_INFO['fun'])})",
+                f"➣ Fun ({len(GRP_INFO['fun'])})",
                 data=f"fun_menu",
             ),
             Button.inline(
-                f"🧩 Misc ({len(GRP_INFO['misc'])})",
+                f"➣ Misc ({len(GRP_INFO['misc'])})",
                 data=f"misc_menu",
             ),
         ),
         (
             Button.inline(
-                f"🧰 Tools ({len(GRP_INFO['tools'])})",
+                f"➣ Tools ({len(GRP_INFO['tools'])})",
                 data=f"tools_menu",
             ),
             Button.inline(
-                f"🗂 Utils ({len(GRP_INFO['utils'])})",
+                f"➣ Utils ({len(GRP_INFO['utils'])})",
                 data=f"utils_menu",
             ),
         ),
         (
             Button.inline(
-                f"➕ Extra ({len(GRP_INFO['extra'])})",
+                f"➣ Extra ({len(GRP_INFO['extra'])})",
                 data=f"extra_menu",
             ),
             Button.inline(
-                f"🔒 Close Menu",
+                f"➣ Close Menu",
                 data=f"close",
             ),
         ),
@@ -195,12 +195,12 @@ def paginate_help(
             ] + [
                 (
                     Button.inline("⌫", data=f"{prefix}_prev({modulo_page})_plugin"),
-                    Button.inline("⚙️ Main Menu", data="mainmenu"),
+                    Button.inline("➣️ Main Menu", data="mainmenu"),
                     Button.inline("⌦", data=f"{prefix}_next({modulo_page})_plugin"),
                 )
             ]
         else:
-            pairs = pairs + [(Button.inline("⚙️ Main Menu", data="mainmenu"),)]
+            pairs = pairs + [(Button.inline("➣️ Main Menu", data="mainmenu"),)]
     elif len(pairs) > number_of_rows:
         pairs = pairs[
             modulo_page * number_of_rows : number_of_rows * (modulo_page + 1)
@@ -211,7 +211,7 @@ def paginate_help(
                     data=f"{prefix}_prev({modulo_page})_command_{category_plugins}_{category_pgno}",
                 ),
                 Button.inline(
-                    "⬅️ Back ",
+                    "🔙 Back ",
                     data=f"back_plugin_{category_plugins}_{category_pgno}",
                 ),
                 Button.inline(
@@ -224,7 +224,7 @@ def paginate_help(
         pairs = pairs + [
             (
                 Button.inline(
-                    "⬅️ Back ",
+                    "🔙 Back ",
                     data=f"back_plugin_{category_plugins}_{category_pgno}",
                 ),
             )
@@ -677,10 +677,10 @@ async def on_plug_in_callback_query_handler(event):
     buttons = [
         (
             Button.inline(
-                "⬅️ Back ",
+                "🔙 Back ",
                 data=f"back_command_{category}_{pgno}_{category_plugins}_{category_pgno}",
             ),
-            Button.inline("⚙️ Main Menu", data="mainmenu"),
+            Button.inline("➣️ Main Menu", data="mainmenu"),
         )
     ]
     text = f"**Command :** `{tr}{cmd}`\
